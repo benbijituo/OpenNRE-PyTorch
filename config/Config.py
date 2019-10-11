@@ -46,11 +46,11 @@ class Config(object):
 		self.num_classes = 53
 		self.hidden_size = 230
 		self.pos_size = 5
-		self.max_epoch = 15
+		self.max_epoch = 25 #15
 		self.opt_method = 'SGD'
 		self.optimizer = None
-		self.learning_rate = 0.5
-		self.weight_decay = 1e-5
+		self.learning_rate = 0.5 # 0.01
+		self.weight_decay = 1e-5 # 0
 		self.drop_prob = 0.5
 		self.checkpoint_dir = './checkpoint'
 		self.test_result_dir = './test_result'
@@ -59,7 +59,7 @@ class Config(object):
 		self.pretrain_model = None
 		self.trainModel = None
 		self.testModel = None
-		self.batch_size = 160
+		self.batch_size = 128 # 160
 		self.word_size = 50
 		self.window_size = 3
 		self.epoch_range = None
